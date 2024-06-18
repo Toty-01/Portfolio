@@ -14,8 +14,8 @@ import { fadeIn } from "../variants"
 const Home = () => {
   return <div className="bg-primary/60 h-full">
     { /*text*/}
-    <div className="">
-      <div className="">
+    <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/40 to-black/10">
+      <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
         {/* title */}
         <h1 className="h1">
           Transformer vos idées <br /> en  <span className="text-accent">Réalité Digitale</span>
@@ -26,11 +26,15 @@ const Home = () => {
           ex dolorum aperiam asperiores molestiae eligendi iste architecto quaerat consectetur. Distinctio tempore eligendi, architecto modi, 
           totam doloremque molestiae qui, deleniti sed veniam a porro amet sit corporis quo expedita error et nesciunt ex voluptatum. Molestiae beatae ab eos alias dolor?
         </p>
+        {/* btn */}
+        <div className="flex justify-center xl:hidden relative">
+          <ProjectsBtn />
+        </div>
       </div>
     </div>
       { /*image*/ }
     <div className="">image</div>
-    </div>;
+    </div>
 };
 
 export default Home;
