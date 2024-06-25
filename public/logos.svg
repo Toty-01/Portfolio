@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style bx:fonts="Alata">@import url(https://fonts.googleapis.com/css2?family=Alata%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
+  </defs>
+  <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px; white-space: pre;" transform="matrix(1.954116, 0, 0, 2.873123, -102.357056, -144.713882)"><tspan style="fill: rgb(240, 240, 240); font-family: Alata; font-weight: 700;" x="89.623" y="123.315">anthony</tspan><tspan style="font-family: Alata;"> </tspan><tspan style="fill: rgb(251, 251, 251); font-family: Alata;">cauche</tspan><tspan style="fill: rgb(209, 209, 209);"> </tspan><tspan style="fill: rgb(255, 4, 4);">.</tspan></text>
+</svg>

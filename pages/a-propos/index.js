@@ -1,3 +1,7 @@
+import React, { useState } from "react";
+import Avatar from "../../components/Avatar";
+import Circles from "../../components/Circles";
+
 // icons
 import {
   FaHtml5,
@@ -89,7 +93,10 @@ const aboutData = [
 ];
 
 const About = () => {
-  return <div>À propos</div>;
+  const [index, setIndex] = useState(0);
+  return <div>
+    <Circles />
+  </div>;
 };
 
 export default About;
