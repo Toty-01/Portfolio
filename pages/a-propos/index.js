@@ -23,10 +23,10 @@ import {
 //  data
 const aboutData = [
   {
-    title: 'skills',
+    title: 'Compétences',
     info: [
       {
-        title: 'Web Development',
+        title: 'Developpement Web',
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
@@ -44,7 +44,7 @@ const aboutData = [
     ],
   },
   {
-    title: 'awards',
+    title: 'Autres',
     info: [
       {
         title: 'Webby Awards - Honoree',
@@ -57,7 +57,7 @@ const aboutData = [
     ],
   },
   {
-    title: 'experience',
+    title: 'Expérience',
     info: [
       {
         title: 'UX/UI Designer - XYZ Company',
@@ -74,7 +74,7 @@ const aboutData = [
     ],
   },
   {
-    title: 'credentials',
+    title: 'Diplômes',
     info: [
       {
         title: 'Web Development - ABC University, LA, CA',
@@ -92,10 +92,42 @@ const aboutData = [
   },
 ];
 
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
+
 const About = () => {
   const [index, setIndex] = useState(0);
-  return <div>
+  console.log(index);
+
+  return <div className="h-full bg-primary/30 py-40 text-center xl:text-left">
     <Circles />
+    {/* avatar img */}
+    <motion.div 
+    animate="show"
+    exit="hidden"
+    variants={fadeIn('right', 0.2)} 
+    initial="hidden" 
+    className="hidden xl:flex absolute bottom-0 -left-[370px]">
+      <Avatar />
+    </motion.div>
+    <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="">text</div>
+      <div className="">
+        <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+          {aboutData.map((item, itemIndex) =>{
+            return (
+            <div 
+              key={itemIndex} 
+              className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'} 
+              cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-0 after:left-0`}
+              onClick={() => setIndex(itemIndex)}
+            >
+              {item.title}
+            </div>
+          )})}
+        </div>
+      </div>
+    </div>
   </div>;
 };
 
