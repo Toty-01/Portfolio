@@ -50,6 +50,18 @@
   }
 }
 .roar {
-  z-index: 999;
+  z-index: 11;
 }
-
+.about-page .picson {
+  transform: translateX(5rem);
+}
+.lolo  {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.lolo::-webkit-scrollbar {
+  display: none;
+}
+.lulu::after {
+  background-color: rgb(241 48 36 / var(--tw-bg-opacity)) !important;
+}
