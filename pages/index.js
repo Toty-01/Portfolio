@@ -31,10 +31,18 @@ const Home = () => {
           initial="hidden" 
           animate="show"
           exit="hidden"
+          className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-2 text-white font-medium">
+            Bienvenue sur mon portfolio . 
+        </motion.p>
+        <motion.p 
+          variants={fadeIn('down', 0.4)} 
+          initial="hidden" 
+          animate="show"
+          exit="hidden"
           className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-white">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, ducimus! Magni, iusto excepturi? Laudantium sed maiores impedit eveniet! Ullam nobis 
-          ex dolorum aperiam asperiores molestiae eligendi iste architecto quaerat consectetur. Distinctio tempore eligendi, architecto modi, 
-          totam doloremque molestiae qui, deleniti sed veniam a porro amet sit corporis quo expedita error et nesciunt ex voluptatum. Molestiae beatae ab eos alias dolor?
+            Vous y trouverez une sélection de mes projets, les services que je propose, ainsi qu&#39;une introduction à mon parcours professionnel. 
+            Explorez mes réalisations pour découvrir comment j&#39;aborde chaque défi avec créativité. Que vous ayez besoin d&#39;un site web, d&#39;un logiciel ou de conseils en développement, je suis là pour vous aider. 
+            N&#39;hésitez pas à utiliser le formulaire de contact pour toute question ou demande. Bonne visite !!!
         </motion.p>
         {/* btn */}
         <div className="flex justify-center xl:hidden relative">
