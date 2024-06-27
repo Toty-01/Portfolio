@@ -7,10 +7,10 @@ import { fadeIn } from '../../variants'
 
 const Projets = () => {
   return( 
-  <div className="h-full bg-primary/30 py-36 flex items-center">
+  <div className="h-full bg-primary/30 flex ragout lolo">
     <Circles />
-    <div className="container mx-auto">
-      <div className="flex flex-col xl:flex-row gap-x-8">
+    <div className="container mx-auto lolo ">
+      <div className="flex flex-col xl:flex-row gap-x-8  glouglou">
         {/* text */}
         <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
           <motion.h2 
@@ -18,7 +18,7 @@ const Projets = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 xl:mt-8"
+            className="h2 xl:mt-12"
           >
             Mes Projets <span className="text-accent">.</span>
           </motion.h2>
@@ -41,7 +41,7 @@ const Projets = () => {
           className="w-full xl:max-w-[65%]"
         >
           {/* slider */}
-          <WorkSlider />
+          <WorkSlider className="" />
         </motion.div>
 
       </div>

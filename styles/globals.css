@@ -75,5 +75,21 @@
   .height-slides {
     height: 144px;
   }
+  .glouglou {
+    margin-bottom: 11rem;
+  }
+  .ragout {
+    position: relative;
+    top: 10rem;
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ragout {
+    align-items: center;
+  }
+  .glouglou {
+    margin-bottom: 0;
+  }
 }
 

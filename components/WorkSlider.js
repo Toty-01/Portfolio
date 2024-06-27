@@ -6,18 +6,22 @@ const workSlides = {
         {
           title: 'title',
           path: '/thumb1.jpg',
+          ancre: '/parc-des-oiseaux',
         },
         {
-          title: 'Terre Valserhône tourisme',
+          title: 'OT Terre Valserhône',
           path: '/ot.png',
+          ancre: '/Ot-terre-valserhone',
         },
         {
           title: 'title',
           path: '/thumb3.jpg',
+          ancre: '/parc-des-oiseaux',
         },
         {
           title: 'RSE 01',
           path: '/rse01.png',
+          ancre: '/parc-des-oiseaux',
         },
       ],
     },
@@ -26,18 +30,22 @@ const workSlides = {
         {
           title: 'Parc des oiseaux',
           path: '/parcdo.png',
+          ancre: '/parc-des-oiseaux',
         },
         {
           title: 'title',
           path: '/thumb2.jpg',
+          ancre: '/parc-des-oiseaux',
         },
         {
           title: 'talis.community',
           path: '/talis.png',
+          ancre: '/parc-des-oiseaux',
         },
         {
           title: 'title',
           path: '/thumb3.jpg',
+          ancre: '/parc-des-oiseaux',
         },
       ],
     },
@@ -68,11 +76,13 @@ const WorkSlider = () => {
             <div className="grid grid-cols-2 grid-rows-1 gap-4 cursor-pointer">
               {slide.images.map((image, index) => {
                 return (
-                  <div key={index} 
-                  width={500}
-                  height={300}
-                  className="relative rounded-lg overflow-hidden flex items-center justify-center group">
-                    <div className="flex items-center justify-center relative overflow-hidden">
+                  <div 
+                    key={index} 
+                    width={500}
+                    height={300}
+                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                  >
+                    <div className="flex items-center justify-center relative overflow-hidden group">
                       <Image 
                        key={index}
                         src={image.path}
@@ -82,15 +92,32 @@ const WorkSlider = () => {
                         className='object-cover object-bottom height-slides rounded-md'
                       />
                       {/* bg */}
-                      <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#df0707] to-[#1d0a57] opacity-0 group-hover:opacity-80 transition-all duration-700">
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#df0707] to-[#1d0a57] opacity-0 group-hover:opacity-80 transition-all duration-700">
+                      <a 
+                        className='absolute w-[100%] h-[100%]' 
+                        href={image.ancre} 
+                      >
+                      </a>
                       </div>
                       {/* title */}
-                      <div className="absolute bottom-0 translate-y-full xl:group-hover:-translate-y-16 group-hover:-translate-y-8 group-hover:-translate-x-4 transition-all duration-300">
-                        <div className="">
-                          <div className="">Title part 1</div>
-                          <div className="">Title part 2</div>
-                          <div className="">icon</div>
+                      <div className="absolute bottom-0 translate-y-full xl:group-hover:-translate-y-24 group-hover:-translate-y-14 group-hover:-translate-x-0 transition-all duration-300">
+                        <div className="flex items-center gap-x-2 md:text-[13px] text-[8px] tracking-[0.2em]">
+                          <a 
+                            className='absolute w-[100%] h-[100%]' 
+                            href={image.ancre} 
+                          >
+                          </a>
+                          <div className="delay-100">VOIR</div>
+                          <div className="translate-y-[800%] group-hover:translate-y-0 transition-all duration-200 delay-100">
+                            PROJET
+                          </div>
+                          <div className="text-xl translate-y-[1000%] group-hover:translate-y-0 transition-all duration-200 delay-200"><BsArrowRight /></div>
+                          <br />
                         </div>
+                        <div className="titre md:text-[18px] text-[14px]">
+                          {image.title}
+                        </div>
+
                       </div>
                     </div>
                   </div>

@@ -23,7 +23,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           className="h1">
-          Transformer vos idées <br /> en  <span className="text-accent">Réalité Digitale</span>
+          Transformez vos idées <br /> en  <span className="text-accent">Réalité Digitale</span>
         </motion.h1>
         {/* Subtitle */}
         <motion.p 
