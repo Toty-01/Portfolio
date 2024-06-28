@@ -4,8 +4,8 @@ const workSlides = {
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          title: 'Lockify',
+          path: '/lockify.png',
           ancre: '/parc-des-oiseaux',
         },
         {
@@ -15,13 +15,13 @@ const workSlides = {
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/thumb1.jpg',
           ancre: '/parc-des-oiseaux',
         },
         {
           title: 'RSE 01',
           path: '/rse01.png',
-          ancre: '/parc-des-oiseaux',
+          ancre: '/rse01',
         },
       ],
     },
@@ -33,19 +33,19 @@ const workSlides = {
           ancre: '/parc-des-oiseaux',
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
-          ancre: '/parc-des-oiseaux',
-        },
-        {
-          title: 'talis.community',
-          path: '/talis.png',
+          title: 'Carrefour Cadours',
+          path: '/carrefour.png',
           ancre: '/parc-des-oiseaux',
         },
         {
           title: 'title',
           path: '/thumb3.jpg',
           ancre: '/parc-des-oiseaux',
+        },
+        {
+          title: 'talis.community',
+          path: '/talis.png',
+          ancre: '/talis-community',
         },
       ],
     },
@@ -101,12 +101,12 @@ const WorkSlider = () => {
                       </div>
                       {/* title */}
                       <div className="absolute bottom-0 translate-y-full xl:group-hover:-translate-y-24 group-hover:-translate-y-14 group-hover:-translate-x-0 transition-all duration-300">
-                        <div className="flex items-center gap-x-2 md:text-[13px] text-[8px] tracking-[0.2em]">
                           <a 
                             className='absolute w-[100%] h-[100%]' 
                             href={image.ancre} 
                           >
                           </a>
+                        <div className="flex items-center gap-x-2 md:text-[13px] text-[9px] tracking-[0.2em]">
                           <div className="delay-100">VOIR</div>
                           <div className="translate-y-[800%] group-hover:translate-y-0 transition-all duration-200 delay-100">
                             PROJET
