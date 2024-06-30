@@ -4,6 +4,11 @@ const workSlides = {
     {
       images: [
         {
+          title: 'talis.community',
+          path: '/talis.png',
+          ancre: '/talis-community',
+        },
+        {
           title: 'Lockify',
           path: '/lockify.png',
           ancre: '/parc-des-oiseaux',
@@ -12,11 +17,6 @@ const workSlides = {
           title: 'OT Terre Valserhône',
           path: '/ot.png',
           ancre: '/Ot-terre-valserhone',
-        },
-        {
-          title: 'title',
-          path: '/thumb1.jpg',
-          ancre: '/parc-des-oiseaux',
         },
         {
           title: 'RSE 01',
@@ -43,9 +43,9 @@ const workSlides = {
           ancre: '/parc-des-oiseaux',
         },
         {
-          title: 'talis.community',
-          path: '/talis.png',
-          ancre: '/talis-community',
+          title: 'title',
+          path: '/thumb1.jpg',
+          ancre: '/parc-des-oiseaux',
         },
       ],
     },

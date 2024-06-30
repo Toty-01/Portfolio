@@ -92,4 +92,9 @@
     margin-bottom: 0;
   }
 }
+@media (min-width: 960px) {
+  .voila.lg\:row-end-6 {
+      grid-row-end: 5 !important;
+  }
+}
 

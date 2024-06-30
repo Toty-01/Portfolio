@@ -7,6 +7,7 @@ import {
   FaHtml5,
   FaCss3,
   FaJs,
+  FaPhp,
   FaReact,
   FaWordpress,
   FaFigma,
@@ -34,16 +35,17 @@ const prodatasss = {
           <FaCss3 title='CSS'/>,
           <FaJs title='JavaScript' />,
           <FaWordpress title='Wordpress' />,
+          <FaPhp title='php'/>,
           <FaFigma title='Figma' />,
           <FaBootstrap title='Bootstrap' />,
         ],
       },
       image: {
-        sources: ['/talis.png', '/thumb1.jpg', '/thumb2.jpg'],
+        sources: ['/talis.png', '/talis2.png', '/talis1.png'],
         classes: [
-          'w-full h-60 object-cover object-bottom rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full',
-          ' w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32',
-          ' w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32'
+          'w-full h-60 object-cover object-bottom rounded-sm sm:h-52 sm:col-span-2 lg:col-span-full',
+          ' w-full h-52 object-cover object-bottom rounded-sm sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32',
+          ' w-full h-52 object-cover  rounded-sm md:block lg:row-start-2 lg:col-span-2 lg:h-32'
         ],
       }
     }

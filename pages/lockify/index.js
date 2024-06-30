@@ -7,8 +7,8 @@ import {
   FaHtml5,
   FaCss3,
   FaJs,
-  FaReact,
   FaPhp,
+  FaReact,
   FaWordpress,
   FaFigma,
   FaBootstrap ,
@@ -24,11 +24,11 @@ const prodatasss = {
   datasss: 
     {
       url: {
-        ref: 'https://www.terrevalserhone-tourisme.fr',
+        ref: 'https://www.talis.community',
       },
       text: {
-        title: 'Office de tourisme terre valserhône',
-        subtitle: "OT terre valserhône",
+        title: 'Lockify',
+        subtitle: "logiciel - Lockify",
         year: '2024',
         icons: [
           <FaHtml5 title='html'/>,
@@ -41,18 +41,18 @@ const prodatasss = {
         ],
       },
       image: {
-        sources: ['/ot.png', '/ottss.png', '/ott.png'],
+        sources: ['/talis.png', '/talis2.png', '/talis1.png'],
         classes: [
           'w-full h-60 object-cover object-bottom rounded-sm sm:h-52 sm:col-span-2 lg:col-span-full',
           ' w-full h-52 object-cover object-bottom rounded-sm sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32',
-          ' w-full h-52 object-cover object-bottom rounded-sm md:block lg:row-start-2 lg:col-span-2 lg:h-32'
+          ' w-full h-52 object-cover  rounded-sm md:block lg:row-start-2 lg:col-span-2 lg:h-32'
         ],
       }
     }
 };
 
 
-const otvalserhone = () => {
+const lock = () => {
   return (
     <div className="h-full bg-primary/20 relative xl:top-34 top-44 pt-10 lolo xl:pb-4 pb-40">
       <h2 className='xl:text-4xl text-2xl text-center font-bold pb-10'>{prodatasss.datasss.text.title} <span className='text-accent'>.</span></h2>
@@ -63,7 +63,7 @@ const otvalserhone = () => {
             <h2 class="mt-1 text-lg font-semibold text-white md:text-2xl dark:sm:text-white lg:mb-2 order-2">{prodatasss.datasss.text.subtitle}</h2>
             <p class="text-xl leading-4 font-medium text-white lg:order-first order-1 mt-4 lg:mb-2 lg:mt-2">Technologies</p>
           </div>
-          <div class="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 voila lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
+          <div class="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
             {prodatasss.datasss.image.sources.map((source, index) => (
               <Image key={index} width={600} height={400} src={source} alt={`image-${index}`} className={prodatasss.datasss.image.classes[index]} loading="lazy" />
             ))}
@@ -77,10 +77,9 @@ const otvalserhone = () => {
                 </div>
           </dl>
           <p class="mt-2 text-lg leading-6 col-start-1 sm:col-span-2 lg:row-start-3 lg:mt-2 lg:col-span-1 text-white/90">
-          J&rsquo;ai travaillé pour l&rsquo;Office de tourisme de Terre Valserhône, qui souhaitait moderniser son site web. Le design a été réalisé par Résonance Publique, tandis que j&rsquo;ai pris en charge l&rsquo;intégration, les modifications, et l&rsquo;ajout de nouveaux blocs.
-          <br />Dans ce projet, des plugins avaient été développés pour afficher et filtrer les objets touristiques d&rsquo;Apidae. J&rsquo;ai donc dû les adapter pour respecter la nouvelle charte graphique.
-          <br />J&apos;ai aussi créé un plugin par exemple pour intégrer, en shortcode, le bloc de webcam et de carte interactive dans différentes parties du site.
-          <Image className='rounded-lg mt-3 w-10 h-10 bg-white' src="/apide.png" alt="Apidae Icon" width={50} height={40} alt={'apidae logo'} />
+          J&apos;ai contribué au développement du site web de TALIS.community en utilisant la méthode agile. Nous étions une équipe de 5 développeurs sur ce projet de grande envergure. 
+          <br />Nous avons intégré des Advanced Custom Fields (ACF) dans WordPress pour permettre aux clients de rédiger facilement du contenu modulable. J&apos;ai, par exemple, développé les compteurs de la page d&apos;accueil en JavaScript.
+          <br />Nous avons réalisé du pixel perfect en nous basant sur les maquettes réalisées sur figma par notre designeur. 
           </p>
           <div class="mt-4 col-start-1 row-start-4 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-5 lg:row-end-6">
             <a href={prodatasss.datasss.url.ref} className='border-accent hover:bg-transparent bg-customBlue transition-all duration-500 p-2 rounded-md border-2 w-full h-full' target='_blank'><button type="button" class="bg-transparent text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Voir le site</button></a>
@@ -94,4 +93,4 @@ const otvalserhone = () => {
   )
 }
 
-export default otvalserhone
+export default lock
