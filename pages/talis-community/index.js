@@ -80,10 +80,12 @@ const talis = () => {
           J&apos;ai contribué au développement du site web de TALIS.community en utilisant la méthode agile. Nous étions une équipe de 5 développeurs sur ce projet de grande envergure. 
           <br />Nous avons intégré des Advanced Custom Fields (ACF) dans WordPress pour permettre aux clients de rédiger facilement du contenu modulable. J&apos;ai, par exemple, développé les compteurs de la page d&apos;accueil en JavaScript.
           <br />Nous avons réalisé du pixel perfect en nous basant sur les maquettes réalisées sur figma par notre designeur. 
+          <br /><span className='mt-2 line-clamp-1 font-bold'>Année : {prodatasss.datasss.text.year}</span>
           </p>
           <div class="mt-4 col-start-1 row-start-4 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-5 lg:row-end-6">
             <a href={prodatasss.datasss.url.ref} className='border-accent hover:bg-transparent bg-customBlue transition-all duration-500 p-2 rounded-md border-2 w-full h-full' target='_blank'><button type="button" class="bg-transparent text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Voir le site</button></a>
-            <a href={"/contact"}><button type="button" class="bg-accent hover:bg-red-800 transition-all duration-500 ml-3 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"> Me contacter</button></a>
+            <a href={"/mes-projets"}><button type="button" className="bg-accent hover:bg-red-800 transition-all duration-500 ml-3 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Revenir aux projets</button></a>
+            <br /><a href={"/contact"}><button type="button" className="bg-accent hover:bg-red-800 mt-4 transition-all duration-500  text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"> Me contacter</button></a>
           </div>
         </div>
       </div>

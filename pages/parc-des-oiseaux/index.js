@@ -41,11 +41,11 @@ const prodatasss = {
         ],
       },
       image: {
-        sources: ['/parcdo.png', '/parcdo.png', '/talis1.png'],
+        sources: ['/parcdo.png', '/parcdo.png', '/pdoo.png'],
         classes: [
           'w-full h-60 object-cover object-bottom rounded-sm sm:h-52 sm:col-span-2 lg:col-span-full',
           ' w-full h-52 object-cover object-top rounded-sm sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32',
-          ' w-full h-52 object-cover  rounded-sm md:block lg:row-start-2 lg:col-span-2 lg:h-32'
+          ' w-full h-52 object-cover object-bottom rounded-sm md:block lg:row-start-2 lg:col-span-2 lg:h-32'
         ],
       }
     }
@@ -77,12 +77,13 @@ const parcdo = () => {
                 </div>
           </dl>
           <p class="mt-2 text-lg leading-6 col-start-1 sm:col-span-2 lg:row-start-3 lg:mt-2 lg:col-span-1 text-white/90">
-          correction de bugs 
-          <br />affichage des restaurants en fonction de leur statut
-          <br />mise en place d un nouveau système pour le consentement des cookies (de axeptio vers un autre complianz )
+          Pour le site web du Parc des Oiseaux, j&rsquo;ai été responsable de plusieurs améliorations techniques et correctives. 
+          <br />J&rsquo;ai corrigé divers bugs pour assurer une expérience utilisateur fluide (la vidéo page d&rsquo;accueil par exemple). 
+          <br />J&rsquo;ai également implémenté une fonctionnalité permettant d&rsquo;afficher les restaurants en fonction de leur statut, offrant ainsi des informations actualisées aux visiteurs en fonction du jour choisi. 
+          <br />De plus, j&rsquo;ai mis en place un nouveau système de gestion du consentement des cookies.
           <br /><span className='mt-2 line-clamp-1 font-bold'>Année : {prodatasss.datasss.text.year}</span>
           </p>
-          <div class="mt-4 col-start-1 row-start-4 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-0 lg:col-start-1 lg:row-start-5 lg:row-end-6">
+          <div class="mt-4 col-start-1 row-start-4 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-5 lg:row-end-6">
             <a href={prodatasss.datasss.url.ref} className='border-accent hover:bg-transparent bg-customBlue transition-all duration-500 p-2 rounded-md border-2 w-full h-full' target='_blank'><button type="button" class="bg-transparent text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Voir le site</button></a>
             <a href={"/mes-projets"}><button type="button" className="bg-accent hover:bg-red-800 transition-all duration-500 ml-3 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Revenir aux projets</button></a>
             <br /><a href={"/contact"}><button type="button" className="bg-accent hover:bg-red-800 mt-4 transition-all duration-500  text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"> Me contacter</button></a>

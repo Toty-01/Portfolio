@@ -81,10 +81,12 @@ const otvalserhone = () => {
           <br />Dans ce projet, des plugins avaient été développés pour afficher et filtrer les objets touristiques d&rsquo;Apidae. J&rsquo;ai donc dû les adapter pour respecter la nouvelle charte graphique.
           <br />J&apos;ai aussi créé un plugin par exemple pour intégrer, en shortcode, le bloc de webcam et de carte interactive dans différentes parties du site.
           <Image className='rounded-lg mt-3 w-10 h-10 bg-white' src="/apide.png" alt="Apidae Icon" width={50} height={40} alt={'apidae logo'} />
+          <br /><span className='mt-2 line-clamp-1 font-bold'>Année : {prodatasss.datasss.text.year}</span>
           </p>
           <div class="mt-4 col-start-1 row-start-4 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-5 lg:row-end-6">
             <a href={prodatasss.datasss.url.ref} className='border-accent hover:bg-transparent bg-customBlue transition-all duration-500 p-2 rounded-md border-2 w-full h-full' target='_blank'><button type="button" class="bg-transparent text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Voir le site</button></a>
-            <a href={"/contact"}><button type="button" class="bg-accent hover:bg-red-800 transition-all duration-500 ml-3 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"> Me contacter</button></a>
+            <a href={"/mes-projets"}><button type="button" className="bg-accent hover:bg-red-800 transition-all duration-500 ml-3 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Revenir aux projets</button></a>
+            <br /><a href={"/contact"}><button type="button" className="bg-accent hover:bg-red-800 mt-4 transition-all duration-500  text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"> Me contacter</button></a>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const workSlides = {
         {
           title: 'Lockify',
           path: '/lockify.png',
-          ancre: '/parc-des-oiseaux',
+          ancre: '/lockify',
         },
         {
           title: 'OT Terre Valserhône',
@@ -35,12 +35,12 @@ const workSlides = {
         {
           title: 'Carrefour Cadours',
           path: '/carrefour.png',
-          ancre: '/parc-des-oiseaux',
+          ancre: '/carrefour-contact-cadours',
         },
         {
-          title: 'title',
-          path: '/thumb3.jpg',
-          ancre: '/parc-des-oiseaux',
+          title: 'Chauffeur Prestige',
+          path: '/chauf.png',
+          ancre: '/chauffeur-prestige',
         },
         {
           title: 'title',

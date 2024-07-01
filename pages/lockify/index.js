@@ -24,28 +24,28 @@ const prodatasss = {
   datasss: 
     {
       url: {
-        ref: 'https://www.talis.community',
+        ref: 'https://lockify.fcpriay.fr',
       },
       text: {
         title: 'Lockify',
         subtitle: "logiciel - Lockify",
         year: '2024',
         icons: [
+          <SiSymfony title='Symfony' />,
+          <FaPhp title='php'/>,
           <FaHtml5 title='html'/>,
           <FaCss3 title='CSS'/>,
           <FaJs title='JavaScript' />,
-          <FaWordpress title='Wordpress' />,
-          <FaPhp title='php'/>,
-          <FaFigma title='Figma' />,
           <FaBootstrap title='Bootstrap' />,
+          <FaFigma title='Figma' />,
         ],
       },
       image: {
-        sources: ['/talis.png', '/talis2.png', '/talis1.png'],
+        sources: [ '/locki.png','/lockify.png', '/lockify.png'],
         classes: [
           'w-full h-60 object-cover object-bottom rounded-sm sm:h-52 sm:col-span-2 lg:col-span-full',
           ' w-full h-52 object-cover object-bottom rounded-sm sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32',
-          ' w-full h-52 object-cover  rounded-sm md:block lg:row-start-2 lg:col-span-2 lg:h-32'
+          ' w-full h-52 object-cover object-top rounded-sm md:block lg:row-start-2 lg:col-span-2 lg:h-32'
         ],
       }
     }
@@ -77,13 +77,15 @@ const lock = () => {
                 </div>
           </dl>
           <p class="mt-2 text-lg leading-6 col-start-1 sm:col-span-2 lg:row-start-3 lg:mt-2 lg:col-span-1 text-white/90">
-          J&apos;ai contribué au développement du site web de TALIS.community en utilisant la méthode agile. Nous étions une équipe de 5 développeurs sur ce projet de grande envergure. 
-          <br />Nous avons intégré des Advanced Custom Fields (ACF) dans WordPress pour permettre aux clients de rédiger facilement du contenu modulable. J&apos;ai, par exemple, développé les compteurs de la page d&apos;accueil en JavaScript.
-          <br />Nous avons réalisé du pixel perfect en nous basant sur les maquettes réalisées sur figma par notre designeur. 
+          J&#39;ai développé from scratch un logiciel de gestion des mots de passe. J&#39;ai utilisé Symfony pour sa proximité avec la base de données. Ce gestionnaire permet, après enregistrement ou connexion, de gérer les accès à des sites web, de créer des mots de passe aléatoires, de copier les données, et d&#39;être redirigé directement vers les sites correspondants aussi etc..
+          <br />Les données sensibles sont cryptées en base et l&#39;accès à l&#39;espace personnel est privatisé. Il s&#39;agit actuellement d&#39;une version bêta. Une future version pourrait inclure la double authentification. L&#39;administrateur a la capacité de gérer toutes les données de l&#39;application sans pouvoir en voir le contenu.
+          <br />J&#39;ai réalisé ce projet pour un usage personnel, afin de pouvoir l&#39;utiliser aussi sur smartphone.
+          <br /><span className='mt-2 line-clamp-1 font-bold'>Année : {prodatasss.datasss.text.year}</span>
           </p>
           <div class="mt-4 col-start-1 row-start-4 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-5 lg:row-end-6">
-            <a href={prodatasss.datasss.url.ref} className='border-accent hover:bg-transparent bg-customBlue transition-all duration-500 p-2 rounded-md border-2 w-full h-full' target='_blank'><button type="button" class="bg-transparent text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Voir le site</button></a>
-            <a href={"/contact"}><button type="button" class="bg-accent hover:bg-red-800 transition-all duration-500 ml-3 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"> Me contacter</button></a>
+            <a href={prodatasss.datasss.url.ref} className='border-accent hover:bg-transparent bg-customBlue transition-all duration-500 p-2 rounded-md border-2 w-full h-full' target='_blank'><button type="button" class="bg-transparent text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Tester le logiciel</button></a>
+            <a href={"/mes-projets"}><button type="button" className="bg-accent hover:bg-red-800 transition-all duration-500 ml-3 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Revenir aux projets</button></a>
+            <br /><a href={"/contact"}><button type="button" className="bg-accent hover:bg-red-800 mt-4 transition-all duration-500  text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"> Me contacter</button></a>
           </div>
         </div>
       </div>
