@@ -7,7 +7,7 @@ const Avatar = () => {
     width={600}
     height={600}
     alt="anthony cauche photo"
-    className=""
+    className="opacity-90"
     />
   </div>;
 };

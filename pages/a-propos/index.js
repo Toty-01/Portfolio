@@ -27,18 +27,18 @@ const aboutData = [
       {
         title: 'Developpement Web',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <FaWordpress />,
-          <SiSymfony/>,
+          <FaHtml5 title="html"/>,
+          <FaCss3 title="css"/>,
+          <FaJs title="JavaScript"/>,
+          <FaReact title="React"/>,
+          <SiNextdotjs title="next.js"/>,
+          <FaWordpress title="Wordpress"/>,
+          <SiSymfony title="symfony"/>,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />],
+        icons: [<FaFigma title="Figma"/>, <SiAdobexd title="Adobe xd"/>],
       },
     ],
   },
@@ -63,11 +63,11 @@ const aboutData = [
         stage: '2023 - 2024',
       },
       {
-        title: 'Développeur web',
+        title: 'Développeur web - stage(Adaka)',
         stage: 'Mai - Juillet 2023',
       },
       {
-        title: 'Développeur web',
+        title: 'Développeur web - stage(Pixel digital)',
         stage: 'février - Avril 2023',
       },
       {
@@ -123,7 +123,7 @@ const About = () => {
           initial="hidden" 
           className="h2"
         >
-        Chaque design<span className="text-accent"> épuré</span> cache une histoire captivante</motion.h2>
+        Chaque <span className="text-accent"> design</span> cache une histoire captivante</motion.h2>
         <motion.p 
         animate="show"
         exit="hidden"
@@ -132,8 +132,7 @@ const About = () => {
         className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-white/90" 
         >
           Il y a trois ans, je me suis lancé dans une reconversion dans le domaine de l&apos;informatique.
-          Après plusieurs stages, j&apos;ai travaillé comme développeur au sein d&apos;une agence sur divers grands projets(sites sur mesure et logiciels).
-          Actuellement, je suis à la recherche d&apos;un emploi, toujours animé par la même passion pour ce domaine.
+          Après l&apos;obtention de mon Diplôme et plusieurs stages, j&apos;ai travaillé comme développeur au sein d&apos;une agence sur divers grands projets(sites sur mesure et logiciels).
         </motion.p>
         {/* compteur */}
         <motion.div 
@@ -205,7 +204,7 @@ const About = () => {
                 <div className="">{item.stage}</div>
                 <div className="flex gap-x-4 py-1">
                 {item.icons?.map((icon, itemIndex) => {
-                  return <div className="text-2xl text-white" key={itemIndex}>{icon}</div>
+                  return <div className="text-2xl text-accent hover:animate-pulse" key={itemIndex}>{icon}</div>
                 })}
                 </div>
               </div>
