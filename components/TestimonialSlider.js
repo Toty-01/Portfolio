@@ -1,69 +1,89 @@
 // testimonial data
 const testimonialData = [
   {
-    image: '/t-avt-1.png',
-    name: 'Anne Smith',
-    position: 'Customer',
+    image: '/unnamed.jpg',
+    name: 'Brice Cauche',
+    position: 'Client',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Très professionnel, il a su fournir des solutions à chacunes de nos demandes pour mettre en avant notre marque sur le web. Je recommande ses services.',
   },
   {
-    image: '/t-avt-2.png',
-    name: 'Jane Doe',
-    position: 'Customer',
+    image: '/johnny.jpg',
+    name: 'Johnny Ryser',
+    position: 'Client',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      "Un travail minutieux. Du beau boulot. A su mettre l'image de notre Club en avant sur le web !! (fcpriay.fr)",
   },
   {
-    image: '/t-avt-3.png',
-    name: 'Jhon Doe',
-    position: 'Customer',
+    image: '/Alexis.jpg',
+    name: 'Alexis',
+    position: 'Utilisateur',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      "Interface simple d'utilisation. Site design et responsive. On a envie de naviguer d'avantage. (talis.community)",
   },
 ];
 
-import { BsArrowRight } from 'react-icons/bs';
+import { FaQuoteLeft } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
-import "swiper/css/free-mode";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from 'next/image';
-import { Pagination} from 'swiper';
+import { Navigation, Pagination} from 'swiper';
 
 const TestimonialSlider = () => {
-  return <Swiper
-  spaceBetween={10}
+  return (<Swiper
+    navigation={true}
     pagination={{
       clickable: true,
     }}
-    modules={[ Pagination]}
-    className="h-[280px] sm:h-[480px] height-workslide"
+    modules={[ Navigation, Pagination]}
+    className="h-[360px]"
   >
     {
-      testimonialSlider.map((person,index) => {
+      testimonialData.map((person,index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+            <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
               {/* avatar name position */}
-              <div className="">
-                <div className="">
+              <div className="w-full max-w-[300px] flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
+                <div className="flex flex-col text-center">
                   {/* avatar */}
-                  <div className="">Avatar</div>
+                  <div className="mb-2 mx-auto">
+                    <Image 
+                      width={100} 
+                      height={100} 
+                      alt='icone photo client' 
+                      src={person.image}
+                      className='rounded-full youuu'
+                    />
+                  </div>
                   {/* Name */}
-                  <div className="">Name</div>
+                  <div className="text-lg">
+                    {person.name}
+                  </div>
                   {/* Position */}
-                  <div className="">Position</div>
+                  <div className="text-[12px] uppercase font-extralight tracking-widest">
+                    {person.position}
+                  </div>
                 </div>
               </div>
               {/* message */}
-              <div className="">quote</div>
+              <div className="flex flex-col mt-6 xl:mt-0 justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
+                <div className="mb-4">
+                  <FaQuoteLeft className='text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0'/>
+                </div>
+                <div className="xl:text-lg text-center md:text-left">
+                  {person.message}
+                </div>
+              </div>
             </div>
           </SwiperSlide>
         );
       })
     }
-  </Swiper>;
+  </Swiper>
+  )
 };
 
 export default TestimonialSlider;

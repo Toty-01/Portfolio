@@ -68,6 +68,10 @@
 .height-slides {
   height: 211px;
 }
+.youuu {
+  height: 100px;
+  object-fit: cover;
+}
 @media screen and (max-width: 1200px) {
   .height-workslide {
     height: 356px !important;
