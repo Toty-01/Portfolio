@@ -10,7 +10,7 @@ const workSlides = {
         },
         {
           title: 'Lockify',
-          path: '/lockify.png',
+          path: '/locki.png',
           ancre: '/lockify',
         },
         {
@@ -89,7 +89,7 @@ const WorkSlider = () => {
                         width={500}
                         height={300}
                         alt=''
-                        className='object-cover object-bottom height-slides rounded-md'
+                        className='object-cover object-bottom height-slides rounded-l'
                       />
                       {/* bg */}
                       <div className="absolute inset-0 bg-gradient-to-t from-[#df0707] to-[#1d0a57] opacity-0 group-hover:opacity-80 transition-all duration-700">

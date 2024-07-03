@@ -41,11 +41,11 @@ const prodatasss = {
         ],
       },
       image: {
-        sources: [ '/locki.png','/lockify.png', '/lockify.png'],
+        sources: [ '/locki.png','/lockify.png', '/louk.png'],
         classes: [
-          'w-full h-60 object-cover object-bottom rounded-sm sm:h-52 sm:col-span-2 lg:col-span-full',
-          ' w-full h-52 object-cover object-bottom rounded-sm sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32',
-          ' w-full h-52 object-cover object-top rounded-sm md:block lg:row-start-2 lg:col-span-2 lg:h-32'
+          'w-full h-60 object-cover object-bottom rounded-md sm:h-52 sm:col-span-2 lg:col-span-full',
+          ' w-full h-52 object-cover object-bottom rounded-md sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32',
+          ' w-full h-52 object-cover object-bottom rounded-md md:block lg:row-start-2 lg:col-span-2 lg:h-32'
         ],
       }
     }
@@ -77,9 +77,9 @@ const lock = () => {
                 </div>
           </dl>
           <p class="mt-2 text-lg leading-6 col-start-1 sm:col-span-2 lg:row-start-3 lg:mt-2 lg:col-span-1 text-white/90">
-          J&#39;ai développé from scratch un logiciel de gestion des mots de passe. J&#39;ai utilisé Symfony pour sa proximité avec la base de données. Ce gestionnaire permet, après enregistrement ou connexion, de gérer les accès à des sites web, de créer des mots de passe aléatoires, de copier les données, et d&#39;être redirigé directement vers les sites correspondants aussi etc..
-          <br />Les données sensibles sont cryptées en base et l&#39;accès à l&#39;espace personnel est privatisé. Il s&#39;agit actuellement d&#39;une version bêta. Une future version pourrait inclure la double authentification. L&#39;administrateur a la capacité de gérer toutes les données de l&#39;application sans pouvoir en voir le contenu.
-          <br />J&#39;ai réalisé ce projet pour un usage personnel, afin de pouvoir l&#39;utiliser aussi sur smartphone.
+          J&#39;ai développé from scratch un logiciel de gestion des mots de passe. J&#39;ai utilisé Symfony pour sa proximité avec la base de données. Ce gestionnaire permet, après enregistrement ou connexion, de gérer les accès à des sites web, de créer des mots de passe aléatoires, de copier les données, et d&#39;être redirigé vers les sites aussi etc..
+          <br />Les données sensibles sont cryptées en base, l&#39;accès à l&#39;espace personnel est privé. L&#39;administrateur a la capacité de gérer toutes les données de l&#39;application sans pouvoir en voir le contenu.
+          <br />J&#39;ai réalisé ce projet pour usage personnel, compatible smartphone.
           <br /><span className='mt-2 line-clamp-1 font-bold'>Année : {prodatasss.datasss.text.year}</span>
           </p>
           <div class="mt-4 col-start-1 row-start-4 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-5 lg:row-end-6">

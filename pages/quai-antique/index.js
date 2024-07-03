@@ -76,7 +76,7 @@ const quaiAntique = () => {
           </dl>
           <p class="mt-2 text-lg leading-6 col-start-1 sm:col-span-2 lg:row-start-3 lg:mt-2 lg:col-span-1 text-white/90">
           Pour ce projet, j&rsquo;ai créé une application web de A à Z. Il s&rsquo;agit d&rsquo;un site pour un restaurant où les utilisateurs peuvent se connecter pour effectuer des réservations. L&rsquo;application possède un système d&rsquo;administration sécurisé qui permet de gérer l&rsquo;établissement dans son intégralité. 
-          <br />Les fonctionnalités incluent la gestion des horaires, des entrées, des plats et des desserts sur la carte, ainsi que leurs tarifs associés. Il est également possible de gérer les réservations. Le code source est disponible sur demande.
+          <br />Les fonctionnalités incluent la gestion des horaires, des entrées, des plats et des desserts sur la carte, ainsi que leurs tarifs associés. Il est également possible de gérer les réservations. Le code source est disponible sur mon git.
           <br /><span className='mt-2 line-clamp-1 font-bold'>Année : {prodatasss.datasss.text.year}</span>
           </p>
           <div class="mt-4 col-start-1 row-start-4 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-5 lg:row-end-6">

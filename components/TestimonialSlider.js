@@ -16,7 +16,7 @@ const testimonialData = [
   },
   {
     image: '/Alexis.jpg',
-    name: 'Alexis',
+    name: 'Alexis C.',
     position: 'Utilisateur',
     message:
       "Interface simple d'utilisation. Site design et responsive. On a envie de naviguer d'avantage. (talis.community)",
