@@ -1,6 +1,8 @@
 import React from 'react'
 import Circles from '../../components/Circles';
 import Image from 'next/image';
+import { motion } from "framer-motion";
+import {fadeIn} from '../../variants';
 
 // icons
 import {
@@ -55,8 +57,14 @@ const prodatasss = {
 const lock = () => {
   return (
     <div className="h-full bg-primary/20 relative xl:top-34 top-44 pt-10 lolo xl:pb-4 pb-40">
-      <h2 className='xl:text-4xl text-2xl text-center font-bold pb-10'>{prodatasss.datasss.text.title} <span className='text-accent'>.</span></h2>
-      
+      <motion.h2 
+        variants={fadeIn('down', 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className='xl:text-4xl text-2xl text-center font-bold pb-10'>
+        {prodatasss.datasss.text.title} <span className='text-accent'>.</span>
+      </motion.h2>
       <div class="py-6 px-4 sm:p-6 md:py-10 md:px-8">
         <div class="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2 mb-40 xl-mb-0">
           <div class="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
