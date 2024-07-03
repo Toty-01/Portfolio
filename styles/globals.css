@@ -1,7 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
 
+:root {
+  --font-sora: 'Sora', sans-serif;
+}
+.font-sora {
+  font-family: var(--font-sora);
+}
 .translate-z-0 {
   transform: translateZ(0px);
 }
@@ -80,7 +87,7 @@
     height: 144px;
   }
   .glouglou {
-    margin-bottom: 11rem;
+    margin-bottom: 16rem;
   }
   .ragout {
     position: relative;
