@@ -33,13 +33,13 @@ const prodatasss = {
         subtitle: "logiciel - Lockify",
         year: '2024',
         icons: [
-          <SiSymfony title='Symfony' />,
-          <FaPhp title='php'/>,
-          <FaHtml5 title='html'/>,
-          <FaCss3 title='CSS'/>,
-          <FaJs title='JavaScript' />,
-          <FaBootstrap title='Bootstrap' />,
-          <FaFigma title='Figma' />,
+          <SiSymfony key={"Symfony"} title='Symfony' />,
+          <FaPhp key={"php"} title='php'/>,
+          <FaHtml5 key={"html"} title='html'/>,
+          <FaCss3 key={'CSS'} title='CSS'/>,
+          <FaJs key={"JavaScript"} title='JavaScript' />,
+          <FaBootstrap key={"Bootstrap"} title='Bootstrap' />,
+          <FaFigma key={'Figma'} title='Figma' />,
         ],
       },
       image: {
@@ -52,7 +52,6 @@ const prodatasss = {
       }
     }
 };
-
 
 const lock = () => {
   return (
@@ -68,15 +67,19 @@ const lock = () => {
       <div className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
         <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2 mb-40 xl-mb-0">
           <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-            <h2 className="mt-1 text-lg font-semibold text-white md:text-2xl dark:sm:text-white lg:mb-2 order-2">{prodatasss.datasss.text.subtitle}</h2>
-            <p className="text-xl leading-4 font-medium text-white lg:order-first order-1 mt-4 lg:mb-2 lg:mt-2">Technologies</p>
+            <h2 className="mt-1 text-lg font-semibold text-white md:text-2xl dark:sm:text-white lg:mb-2 order-2">
+              {prodatasss.datasss.text.subtitle}
+            </h2>
+            <p className="text-xl leading-4 font-medium text-white lg:order-first order-1 mt-4 lg:mb-2 lg:mt-2">
+              Technologies
+            </p>
           </div>
           <motion.div
             variants={fadeIn('up', 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden" 
-            className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
+            className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0 voila">
             {prodatasss.datasss.image.sources.map((source, index) => (
               <Image key={index} width={600} height={400} src={source} alt={`image-${index}`} className={prodatasss.datasss.image.classes[index]} loading="lazy" />
             ))}
@@ -84,8 +87,8 @@ const lock = () => {
           <dl className="mt-4 text-xs font-medium flex items-center row-start-2 sm:mt-1 sm:row-start-3 md:mt-2.5 lg:row-start-2">
 
           <div className="flex gap-x-4 py-1">
-                {prodatasss.datasss.text.icons.map((icon, itemIndex) => {
-                  return <div className="text-2xl text-accent hover:animate-pulse" key={itemIndex}>{icon}</div>
+                {prodatasss.datasss.text.icons.map((icon, index) => {
+                  return <div className="text-2xl text-accent hover:animate-pulse" key={index}>{icon}</div>
                 })}
                 </div>
           </dl>

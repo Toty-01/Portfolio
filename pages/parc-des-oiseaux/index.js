@@ -33,13 +33,13 @@ const prodatasss = {
         subtitle: "Parc des oiseaux",
         year: '2023',
         icons: [
-          <FaHtml5 title='html'/>,
-          <FaCss3 title='CSS'/>,
-          <FaWordpress title='Wordpress' />,
-          <FaPhp title='php'/>,
-          <FaJs title='JavaScript' />,
-          <FaFigma title='Figma' />,
-          <FaBootstrap title='Bootstrap' />,
+          <FaHtml5 key={"html"} title='html'/>,
+          <FaCss3 key={"CSS"} title='CSS'/>,
+          <FaWordpress key={"Wordpress"} title='Wordpress' />,
+          <FaPhp key={"php"} title='php'/>,
+          <FaJs key={"Javascript"} title='JavaScript' />,
+          <FaFigma key={"Figma"} title='Figma' />,
+          <FaBootstrap key={"Bootstrap"} title='Bootstrap' />,
         ],
       },
       image: {
@@ -76,7 +76,7 @@ const parcdo = () => {
             initial="hidden"
             animate="show"
             exit="hidden" 
-            className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
+            className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0 voila">
             {prodatasss.datasss.image.sources.map((source, index) => (
               <Image key={index} width={600} height={400} src={source} alt={`image-${index}`} className={prodatasss.datasss.image.classes[index]} loading="lazy" />
             ))}

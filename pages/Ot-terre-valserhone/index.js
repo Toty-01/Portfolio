@@ -33,13 +33,13 @@ const prodatasss = {
         subtitle: "OT terre valserhône",
         year: '2024',
         icons: [
-          <FaHtml5 title='html'/>,
-          <FaCss3 title='CSS'/>,
-          <FaJs title='JavaScript' />,
-          <FaWordpress title='Wordpress' />,
-          <FaPhp title='php'/>,
-          <FaFigma title='Figma' />,
-          <FaBootstrap title='Bootstrap' />,
+          <FaHtml5 key={'html'} title='html'/>,
+          <FaCss3 key={'CSS'} title='CSS'/>,
+          <FaJs key={'JavaScript'} title='JavaScript' />,
+          <FaWordpress key={'Wordpress'} title='Wordpress' />,
+          <FaPhp key={'php'} title='php'/>,
+          <FaFigma key={'Figma'} title='Figma' />,
+          <FaBootstrap key={'Bootstrap'} title='Bootstrap' />,
         ],
       },
       image: {
@@ -62,13 +62,16 @@ const otvalserhone = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className='xl:text-4xl text-2xl text-center font-bold pb-10'>
+        className='xl:text-4xl text-2xl text-center font-bold pb-10'
+      >
         {prodatasss.datasss.text.title} <span className='text-accent'>.</span>
       </motion.h2>
       <div className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
         <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2 mb-40 xl-mb-0">
           <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-            <h2 className="mt-1 text-lg font-semibold text-white md:text-2xl dark:sm:text-white lg:mb-2 order-2">{prodatasss.datasss.text.subtitle}</h2>
+            <h2 className='mt-1 text-lg font-semibold text-white md:text-2xl dark:sm:text-white lg:mb-2 order-2'>
+              {prodatasss.datasss.text.title} <span className='text-accent'>.</span>
+            </h2>
             <p className="text-xl leading-4 font-medium text-white lg:order-first order-1 mt-4 lg:mb-2 lg:mt-2">Technologies</p>
           </div>
           <motion.div
@@ -76,7 +79,7 @@ const otvalserhone = () => {
             initial="hidden"
             animate="show"
             exit="hidden" 
-            className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
+            className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0 voila">
             {prodatasss.datasss.image.sources.map((source, index) => (
               <Image key={index} width={600} height={400} src={source} alt={`image-${index}`} className={prodatasss.datasss.image.classes[index]} loading="lazy" />
             ))}
@@ -84,10 +87,10 @@ const otvalserhone = () => {
           <dl className="mt-4 text-xs font-medium flex items-center row-start-2 sm:mt-1 sm:row-start-3 md:mt-2.5 lg:row-start-2">
 
           <div className="flex gap-x-4 py-1">
-                {prodatasss.datasss.text.icons.map((icon, itemIndex) => {
-                  return <div className="text-2xl text-accent hover:animate-pulse" key={itemIndex}>{icon}</div>
-                })}
-                </div>
+            {prodatasss.datasss.text.icons.map((icon, itemIndex) => {
+              return <div className="text-2xl text-accent hover:animate-pulse" key={itemIndex}>{icon}</div>
+            })}
+          </div>
           </dl>
           <p class="mt-2 text-lg leading-6 col-start-1 sm:col-span-2 lg:row-start-3 lg:mt-2 lg:col-span-1 text-white/90">
           J&rsquo;ai travaillé pour l&rsquo;Office de tourisme de Terre Valserhône, qui souhaitait moderniser son site web. Le design a été réalisé par Résonance Publique, tandis que j&rsquo;ai pris en charge l&rsquo;intégration, les modifications, et l&rsquo;ajout de nouveaux blocs.
