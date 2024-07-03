@@ -28,11 +28,6 @@ const workSlides = {
     {
       images: [
         {
-          title: 'Parc des oiseaux',
-          path: '/parcdo.png',
-          ancre: '/parc-des-oiseaux',
-        },
-        {
           title: 'Carrefour Cadours',
           path: '/carrefour.png',
           ancre: '/carrefour-contact-cadours',
@@ -43,8 +38,13 @@ const workSlides = {
           ancre: '/chauffeur-prestige',
         },
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          title: 'Quai Antique Restaurant',
+          path: '/quai.png',
+          ancre: '/quai-antique',
+        },
+        {
+          title: 'Parc des oiseaux',
+          path: '/parcdo.png',
           ancre: '/parc-des-oiseaux',
         },
       ],

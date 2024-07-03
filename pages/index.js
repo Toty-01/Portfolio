@@ -32,7 +32,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-2 text-white font-medium">
-            Bienvenue sur mon portfolio . 
+            Bienvenue sur mon portfolio <span className="text-accent text-2xl"> .</span>
         </motion.p>
         <motion.p 
           variants={fadeIn('down', 0.4)} 
@@ -41,7 +41,7 @@ const Home = () => {
           exit="hidden"
           className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-2 xl:mb-16 text-white">
             Vous y trouverez une sélection de mes projets, les services que je propose, une introduction à mon parcours professionnel, et bien d&#39;autres choses encore..
-            <br />Bonne visite !!!
+            <br />Bonne visite
         </motion.p>
         {/* btn */}
         <div className="flex justify-center xl:hidden relative">

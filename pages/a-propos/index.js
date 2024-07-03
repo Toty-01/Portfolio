@@ -63,11 +63,11 @@ const aboutData = [
         stage: '2023 - 2024',
       },
       {
-        title: 'Développeur web - stage(Adaka)',
+        title: 'Développeur web - stage / Adaka',
         stage: 'Mai - Juillet 2023',
       },
       {
-        title: 'Développeur web - stage(Pixel digital)',
+        title: 'Développeur web - stage / Pixel digital',
         stage: 'février - Avril 2023',
       },
       {
@@ -132,7 +132,7 @@ const About = () => {
         className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-white/90" 
         >
           Il y a trois ans, je me suis lancé dans une reconversion dans le domaine de l&apos;informatique.
-          Après l&apos;obtention de mon Diplôme et plusieurs stages, j&apos;ai travaillé comme développeur au sein d&apos;une agence sur divers grands projets(sites sur mesure et logiciels).
+          Après l&apos;obtention de mon diplôme et plusieurs stages, j&apos;ai travaillé au sein d&apos;une agence sur divers projets de grande envergure (sites sur mesure et logiciels).
         </motion.p>
         {/* compteur */}
         <motion.div 
