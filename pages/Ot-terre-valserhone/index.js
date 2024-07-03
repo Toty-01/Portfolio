@@ -96,7 +96,7 @@ const otvalserhone = () => {
           J&rsquo;ai travaillé pour l&rsquo;Office de tourisme de Terre Valserhône, qui souhaitait moderniser son site web. Le design a été réalisé par Résonance Publique, tandis que j&rsquo;ai pris en charge l&rsquo;intégration, les modifications, et l&rsquo;ajout de nouveaux blocs.
           <br />Dans ce projet, des plugins avaient été développés pour afficher et filtrer les objets touristiques d&rsquo;Apidae. J&rsquo;ai donc dû les adapter pour respecter la nouvelle charte graphique.
           <br />J&apos;ai aussi créé un plugin par exemple pour intégrer, en shortcode, le bloc de webcam et de carte interactive dans différentes parties du site.
-          <Image className='rounded-lg mt-3 w-10 h-10 bg-white' src="/apide.png" alt="Apidae Icon" width={50} height={40} alt={'apidae logo'} />
+          <Image className='rounded-lg mt-3 w-10 h-10 bg-white' src="/apide.png" alt="Apidae Icon" width={50} height={40} />
           <br /><span className='mt-2 line-clamp-1 font-bold'>Année : {prodatasss.datasss.text.year}</span>
           </p>
           <div class="mt-4 col-start-1 row-start-4 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-5 lg:row-end-6">
