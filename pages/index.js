@@ -22,7 +22,7 @@ const Home = () => {
           initial="hidden" 
           animate="show"
           exit="hidden"
-          className="h2">
+          className="text-[25px] leading-tight md:text-[54px] md:leading-[1.3] mb-4 font-semibold">
           Transformez vos idées <br /> en  <span className="text-accent">Réalité Digitale</span>
         </motion.h1>
         {/* Subtitle */}
